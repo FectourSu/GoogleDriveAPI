@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Diagnostics;
 using System.Threading;
 
@@ -23,7 +24,6 @@ namespace API
                     await obj2.AsyncUploadFile(args[i], "root");
                     start.Stop();
                     Console.WriteLine(start.Elapsed);
-                    Console.WriteLine("Общий размер: " + resultsize);
                     Thread.Sleep(2000);
                 }
                 Environment.Exit(0);

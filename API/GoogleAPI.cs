@@ -21,14 +21,15 @@ namespace API
         public DriveService ConnectApi()
         {
             UserCredential credential;
-            using (var stream = new FileStream(@"C:\Users\filin\Desktop\C#\API\API\bin\Debug\credentials.json", FileMode.Open, FileAccess.Read))
+            string startPath = AppDomain.CurrentDomain.BaseDirectory;
+            using (var stream = new FileStream(startPath + "credentials.json", FileMode.Open, FileAccess.Read))
             {
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
                     Scopes,
                     "user",
                     CancellationToken.None,
-                    new FileDataStore(@"C:\Users\filin\Desktop\C#\API\API\bin\Debug\token.json", true)).Result;
+                    new FileDataStore(startPath + "token.json", true)).Result;
             }
             var service = new DriveService(new BaseClientService.Initializer()
             {
