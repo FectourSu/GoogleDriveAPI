@@ -9,3 +9,4 @@ C:\Users\filin\Desktop\API\Start\bin\Debug\Start.pdb
 C:\Users\filin\Desktop\API\Start\obj\Debug\Start.exe
 C:\Users\filin\Desktop\API\Start\obj\Debug\Start.pdb
 C:\Users\filin\Desktop\API\Start\obj\Debug\Start.csprojAssemblyReference.cache
+C:\Users\filin\Desktop\C#\API\Start\obj\Debug\Start.csprojAssemblyReference.cache

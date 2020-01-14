@@ -43,3 +43,4 @@ C:\Users\filin\Desktop\API\API\obj\Debug\API.csproj.CopyComplete
 C:\Users\filin\Desktop\API\API\obj\Debug\API.exe
 C:\Users\filin\Desktop\API\API\obj\Debug\API.pdb
 C:\Users\filin\Desktop\API\API\obj\Debug\API.csprojAssemblyReference.cache
+C:\Users\filin\Desktop\C#\API\API\obj\Debug\API.csprojAssemblyReference.cache
