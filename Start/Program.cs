@@ -13,7 +13,6 @@ namespace Start
         static private void Options()
         {
             var cr = Console.ReadKey().KeyChar;
-
             var delPath = AppDomain.CurrentDomain.BaseDirectory + "..\\..\\..\\API\\bin\\Debug\\token.json";
 
             switch (cr)
@@ -22,6 +21,7 @@ namespace Start
                     string startPath = AppDomain.CurrentDomain.BaseDirectory;
 
                     var imagePath = startPath + "..\\..\\..\\API\\bin\\Debug\\Marcus-Roberto-Google-Play-Google-Drive.ico";
+
                     var programmPath = startPath + "..\\..\\..\\API\\bin\\Debug\\API.exe";
 
                     var key = Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Google Drive");
@@ -50,7 +50,6 @@ namespace Start
                 case '3':
                     try
                     {
-
                         Registry.ClassesRoot.CreateSubKey(@"Directory\shell\Google Drive").DeleteSubKey("command");
                         Registry.ClassesRoot.CreateSubKey(@"Directory\shell").DeleteSubKey("Google Drive");
 
@@ -68,11 +67,9 @@ namespace Start
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Нажмите  1 для получения возможности загружать файлы на гугл диск");
-
-            Console.WriteLine("Нажмитие 2 что бы удалить аккаунт с приложения, и ограничить права доступа");
-
-            Console.WriteLine("Нажмитие 3 что бы удалить приложение");
+            Console.WriteLine("Нажмите 1 для получения возможности загружать файлы на гугл диск");
+            Console.WriteLine("Нажмите 2 что бы удалить аккаунт с приложения, и ограничить права доступа");
+            Console.WriteLine("Нажмите 3 что бы удалить приложение");
 
             while (true)
             {
