@@ -3,7 +3,7 @@
 <h3><ol><li>
 To run it, you need to go to the Start -> Bin -> Debug folder, find Start there.exe and run it as an administrator
 </li>
-<h3><li>
+<li>
 In the window that appears, select the action you need(if this is the first time you run it, press the number "1" on the keyboard)
 </li>
 <li>
